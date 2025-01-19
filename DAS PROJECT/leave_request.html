@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave request</title>
+    <link rel="stylesheet" href="css/das.css">
+</head>
+<body>
+    <div class="main">
+        <h2>Request For Leave</h2><hr>
+        <div class="inputs">
+            <form>
+                
+                <fieldset>
+                    <legend>Leave Type :</legend>
+                <select class="daytype">
+                    <option>One Day leave</option>
+                    <option>Monthly</option>
+                    <option>Half Day Leave</option>
+                 </select></fieldset><br>
+                <fieldset><legend>To :</legend>
+                <input type="date" name="star date"><br>
+                </fieldset>
+                <fieldset><legend>From :</legend>
+                    <input type="date" name="end date"><br>
+                </fieldset>
+                <fieldset><legend>Write Here</legend>
+                <textarea class="textarea" id="textarea"></textarea>
+                 </fieldset>
+                <input type="button" value="Submit" class="btn">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

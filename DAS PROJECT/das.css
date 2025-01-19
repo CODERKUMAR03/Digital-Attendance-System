@@ -1,0 +1,25 @@
+body{
+	background: linear-gradient(to left,red,orange);
+}
+.main{
+	width:500px;
+	height:600px;
+	background-color: rgba(299, 299,299,0.5);
+	position:relative;
+	padding: 20px;
+	left:30%;
+	top:20%;
+	align-items: center;
+	justify-content: center;
+}
+.studname{
+	width:200px;
+	height:30px;
+
+}
+.studbranch{
+	width:200px;
+	height:30px;
+	padding: 0px;
+	margin: 10px;
+}

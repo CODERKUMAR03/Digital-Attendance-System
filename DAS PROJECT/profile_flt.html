@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile of Faculty</title>
+    <link rel="stylesheet" href="./css/proff.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <img src="menu.jpeg" alt="" id="porff_pic">
+            <h2 id="Proff_name">Proff_name</h2>
+        </div>
+        <section class="buttons">
+            <button id="add">Add classroom</button>
+            <button id="remove">Remove classroom</button>
+            <button>Thinking</button>
+        </section>
+        <dic class="sec">
+            <div class="classes">
+                <label>Class Rooms :</label>
+                
+               <table>
+                <tr>
+                    <th>Class Name</th>
+                    <th>Total student</th>
+                    <th>Batch No.</th>
+                    <th>Manage</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="classes" class="removeoption">
+                        CSE</td>
+                    <td><p id="ts" onload="totalcount()">00</p></td>
+                    <td><p>Batch <span>2020</span></p></td>
+                    <td><a href="./DAS PROJECT.html">Visit</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="classes" class="removeoption"> CSE</td>
+                    <td><p id="ts" onload="totalcount()">00</p></td>
+                    <td><p>Batch <span>2020</span></p></td>
+                    <td><a href="./DAS PROJECT.html">Visit</a></td>
+                </tr>
+               </table>
+            </div>
+        </dic>
+    </div>
+    <script >
+       
+
+        const removeclass = document.getElementById('remove');
+        const add_class = document.getElementById('add');
+        const check = document.getElementById('classes');
+
+        removeclass.addEventListener('click', () =>{
+            check.classList.toggle('showcheck');
+            console.log("remove btn clicked...");
+
+        });
+        add_class.addEventListener('click', () =>{
+            
+            console.log("add btn clicked...");
+
+        });
+      
+
+
+        </script>
+</body>
+</html>

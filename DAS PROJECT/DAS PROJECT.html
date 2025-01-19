@@ -1,0 +1,88 @@
+<html>
+    <head>
+		<title>DIGITAL ATENDENCE SYSTEM</title>
+		<link rel="stylesheet" href="css/makeup.css">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+	</head>
+
+    <BODY>
+        <div class="main">
+            <h2>Batch 2020</h2>
+            <ul>
+                <li><a href="#" onclick="logout()" id="logout">Log out</a></li>
+                <li><a href="leave_request.html">Leave request</a></li>
+                <li><a href="dashboard.html">Das-board</a></li>
+                <li><a href="profile_flt.html">Profile</a></li>
+                
+            </ul>
+
+        </div>
+
+        <div class="count">
+            <section class="sec-a">
+
+                <div class="ts">
+                    <h3>Total students</h3>
+                    <p id="ts" onclick="totalcount()">00</p>
+                </div>
+                <div class="ps">
+                    <h3>present students</h3>
+                    <p id="counterps">00</p>
+                </div>
+                <div class="as">
+                    <h3>Absent students</h3>
+                    <p id="counteras">00</p>
+                </div>
+                <div class="date">
+                    <center><input type="date" required></center>
+                </div>
+             </section>
+            <section class="sec-b">
+
+                <li><button class="add-stud" onclick="popup()">Add student</button></li>
+                <li><button class="remove-stud" onclick="popup()">Remove student</button></li>
+            </section>
+        </div>
+
+        <div class="continer" id="tscount">
+           
+            <div class="data1" id="box">
+                <h4><strong>name</strong> </h4>
+                        <p><strong>002</strong> </p>
+                          <section>
+                          <button class="prnt" onclick="psinc(this)">P</button>
+                          <button class="absnt" onclick="asinc(this)">A</button>
+                          </section>
+            </div>
+                    
+               
+           
+        </div>
+        <div class="overlay"></div>
+        <div class="popup">
+          
+                <span onclick="closepopup()" class="popupclose">&times;</span>
+                <label for="studname">Stud Name :</label><br>
+                <input type="text" id="studname" name="s name" required/><br>
+                <label for="studroll">Stud Roll. :</label><br>
+                <input type="number" id="studroll" name="rnum" required/>
+                <br>
+                <label >Branch Name :</label><br>
+                <select name="bname">
+                    <option value="C.S.E.">Computer Science Engineering.</option>
+                    <option value="C. E.">Civil Engineering.</option>
+                    <option value="E.E.">Electrical Engineering.</option>
+                    <option value="E.E.E.">Electrical & Electronics Engineering.</option>
+                    <option value="M.E.">Mechanical Engineering.</option>
+                </select>
+                
+                <br>
+                <input type="submit" value="ADD" class="btn" onclick=" addEntry()"/>
+            
+        </div>
+    <script src="js/scriptmain.js"></script>
+    </BODY>
+</html>

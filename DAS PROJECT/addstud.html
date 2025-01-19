@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Add Student</title>
+	<link rel="stylesheet" href="css/addstud.css">
+</head>
+<body>
+	<DIV class="OVERLAY"></DIV>
+    <div class="main">
+        <form method="GET" action="main.html" >
+            <span onclick="closepopup()">&times;</span>
+            <label for="s name">Stud Name :</label><br>
+            <input type="text" id="studname" name="s name"/><br>
+            <label for="rnum">Stud Roll. :</label><br>
+            <input type="number" id="studroll" name="rnum" required/>
+            <br>
+            <label for="bname">Branch Name :</label><br>
+            <select name="bname">
+                <option>Computer Science Engineering.</option>
+                <option>Civil Engineering.</option>
+                <option>Electrical Engineering.</option>
+                <option>Electrical & Electronics Engineering.</option>
+                <option>Mechanical Engineering.</option>
+            </select>
+            
+            <br>
+            <input type="button" value="ADD" onclick="studinfo()"/>
+        </form>
+    </div>
+</body>
+</html>
